@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>w3c school</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function onoff (oo) {
+			var oo_status;
+			if (oo == 1) {
+				oo_status = "../site/w3c_school/pic_bulbon.gif";
+			} 
+			else { 
+				oo_status = "../site/w3c_school/pic_bulboff.gif"; 
+			}
+			document.getElementById('onoff_place').src = oo_status;
+		} 
+	</script>
+
+
+<img id="onoff_place" src="../site/w3c_school/pic_bulboff.gif" width="100" height="180">
+
+<button type="button" onclick="onoff(1)">ON</button>
+<button type="button" onclick="onoff(0)">OFF</button>
+
+</body>
+</html>
